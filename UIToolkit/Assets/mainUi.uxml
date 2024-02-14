@@ -1,0 +1,226 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/menuStyle.uss?fileID=7433441132597879392&amp;guid=3a4bd96927767a7448c31e1f346d2431&amp;type=3#menuStyle" />
+    <ui:VisualElement name="Header" style="flex-grow: 1; background-color: rgb(123, 116, 116);">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" style="font-size: 40px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Body" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 80%; flex-direction: row;">
+        <ui:VisualElement name="Left" class="submenus submenu-background">
+            <ui:VisualElement name="Weapons" class="submenus" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:VisualElement name="Equiped-Weapon" class="frame-margin" style="flex-grow: 1; justify-content: space-around; align-self: center; align-items: stretch;">
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="Weapon" class="item-frame" />
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="Weapon" class="item-frame" />
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="Weapon" class="item-frame" />
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="Weapon" class="item-frame" />
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="Weapon" class="item-frame" />
+                    <ui:Button text="Button" display-tooltip-when-elided="true" name="Weapon" class="item-frame" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Proyectiles" class="frame-margin" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-basis: 54%; align-self: center;">
+                    <ui:VisualElement class="item-frame" />
+                    <ui:VisualElement class="item-frame" />
+                    <ui:VisualElement class="item-frame" />
+                    <ui:VisualElement class="item-frame" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Equipment" class="submenus" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-self: center;">
+                    <ui:VisualElement class="frame-margin" style="flex-grow: 0;">
+                        <ui:VisualElement name="Button" class="item-frame" />
+                        <ui:VisualElement name="Button" class="item-frame" />
+                        <ui:VisualElement name="Button" class="item-frame" />
+                        <ui:VisualElement name="Button" class="item-frame" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="frame-margin" style="flex-grow: 0;">
+                        <ui:VisualElement name="Button" class="item-frame" />
+                        <ui:VisualElement name="Button" class="item-frame" />
+                        <ui:VisualElement name="Button" class="item-frame" />
+                        <ui:VisualElement name="Button" class="item-frame" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ring" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-basis: 20%; align-items: center; justify-content: center;">
+                    <ui:VisualElement name="Button" class="item-frame" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Items" class="submenus" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center;">
+                <ui:VisualElement name="VisualElement" class="frame-margin" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); justify-content: space-between; padding-left: 14px; padding-right: 14px; padding-top: 14px; padding-bottom: 14px; align-self: center;">
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                    <ui:VisualElement name="Button" class="item-frame" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Middle" class="submenus submenu-background" style="flex-grow: 1; flex-direction: column; justify-content: center;">
+            <ui:VisualElement name="WeaponStats" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: flex-end;">
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/tablet.png?fileID=2800000&amp;guid=4dcef7eefe367804280a9be1a76d5ec6&amp;type=3#tablet&apos;); width: 70%;" />
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock" style="align-self: flex-end;">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-direction: row;">
+                    <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); align-items: flex-start; justify-content: space-between; align-self: flex-start; flex-basis: 50%;">
+                        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Title" style="border-bottom-color: rgba(0, 0, 0, 0.98); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;" />
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); align-items: flex-start; justify-content: space-between; align-self: flex-start; flex-basis: 50%;">
+                        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Title" style="border-bottom-color: rgba(0, 0, 0, 0.98); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;" />
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Escalados" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); margin-bottom: 20px; margin-top: 20px;">
+                <ui:VisualElement name="States" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="States" display-tooltip-when-elided="true" style="border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; width: 30%;" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Scales" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Scales" display-tooltip-when-elided="true" enable-rich-text="false" style="border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; width: 30%;" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Requirements" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Requirements" display-tooltip-when-elided="true" style="border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; width: 30%;" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="StatBlock" class="ScaleBlock">
+                            <ui:VisualElement name="Icon" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/save.png?fileID=2800000&amp;guid=9f6061270de7c8f488c00b6161361889&amp;type=3#save&apos;); width: 30px; height: 30px; align-self: center;" />
+                            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" style="align-self: center;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Right" class="submenus submenu-background" style="display: flex;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Foot" style="flex-grow: 1; background-color: rgba(123, 115, 115, 0.95); flex-direction: row; justify-content: flex-start; height: auto;">
+        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
+            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
+            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
+            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
+            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

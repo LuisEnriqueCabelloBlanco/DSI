@@ -1,0 +1,57 @@
+.control-text {
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+.submenus {
+    flex-basis: 33%;
+}
+
+.frame-margin {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.submenu-background {
+    background-color: rgb(159, 150, 150);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-frame {
+    width: 54px;
+    height: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-image: url('project://database/Assets/kenney_game-icons/PNG/Black/2x/exclamation.png?fileID=2800000&guid=ee677f21c06d2ca4491f446e4ca8a80c&type=3#exclamation');
+    background-color: rgba(60, 56, 56, 0.69);
+}
+
+.ScaleBlock {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    margin-right: 30px;
+}
