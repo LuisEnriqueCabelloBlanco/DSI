@@ -5,6 +5,10 @@
 
 .submenus {
     flex-basis: 33%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .frame-margin {
@@ -31,7 +35,7 @@
 }
 
 .submenu-background {
-    background-color: rgb(159, 150, 150);
+    background-color: rgb(66, 238, 73);
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -54,4 +58,22 @@
     justify-content: space-between;
     align-self: flex-start;
     margin-right: 30px;
+}
+
+.erificationLvl1 {
+    background-color: rgb(231, 27, 208);
+    border-left-color: rgb(185, 0, 111);
+    border-right-color: rgb(185, 0, 111);
+    border-top-color: rgb(185, 0, 111);
+    border-bottom-color: rgb(185, 0, 111);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}
+
+.erificationLvl2 {
+}
+
+.erificationBtn {
 }
