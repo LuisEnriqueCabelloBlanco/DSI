@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/practica3.uss?fileID=7433441132597879392&amp;guid=546e94600c54fb044996a6113a45cb9c&amp;type=3#practica3" />
+    <ui:VisualElement name="ContenedorPadre" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+        <ui:VisualElement name="Izda" class="border" style="background-color: rgb(19, 120, 48);">
+            <ui:VisualElement name="item1" class="item" />
+            <ui:VisualElement name="item2" class="item" />
+            <ui:VisualElement name="item3" class="item" />
+            <ui:VisualElement name="item4" class="item" />
+            <ui:VisualElement name="item5" class="item" />
+            <ui:VisualElement name="item6" class="item" />
+            <ui:VisualElement name="item7" class="item" />
+            <ui:VisualElement name="item8" class="item" />
+            <ui:VisualElement name="item9" class="item" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Dcha" class="border" style="background-color: rgb(35, 57, 173);">
+            <ui:VisualElement name="item1" class="item" />
+            <ui:VisualElement name="item2" class="item" />
+            <ui:VisualElement name="item3" class="item" />
+            <ui:VisualElement name="item4" class="item" />
+            <ui:VisualElement name="item5" class="item" />
+            <ui:VisualElement name="item6" class="item" />
+            <ui:VisualElement name="item7" class="item" />
+            <ui:VisualElement name="item8" class="item" />
+            <ui:VisualElement name="item9" class="item" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
