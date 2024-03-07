@@ -9,7 +9,7 @@
     border-bottom-width: 5px;
     display: flex;
     background-color: rgb(233, 132, 12);
-    flex-grow: 1;
+    flex-grow: 0;
     flex-wrap: wrap;
     flex-direction: row;
     height: 33%;
