@@ -205,7 +205,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Right" class="submenus submenu-background" style="display: flex;">
-            <Lab4 my-int="81" style="background-color: rgb(0, 0, 0); height: 105px;" />
+            <Lab4 />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="Foot" style="flex-grow: 1; flex-direction: row; justify-content: flex-start; height: auto;">
