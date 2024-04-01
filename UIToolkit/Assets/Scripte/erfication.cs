@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -23,9 +23,10 @@ public class erfication : MonoBehaviour
 
         
         List<VisualElement> cabesa_pie = new() { root.Q("Header"), root.Q("Foot") } ;
-        
+
         //List<VisualElement> list = builder.ToList();
-        
+        Label label =root.Q("Header").Q<Label>();
+        label.text = @"<rotate=""45"">cabesa</rotate>";
 
 
         //foreach para alterar cada elelmento de la lista que hemos generado

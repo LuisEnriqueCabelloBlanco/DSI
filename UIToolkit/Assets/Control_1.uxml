@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
-        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
-        <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
-    </ui:VisualElement>
-</ui:UXML>

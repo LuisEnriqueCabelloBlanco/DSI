@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="Control_1" src="project://database/Assets/Control_1.uxml?fileID=9197481963319205126&amp;guid=438672fd85fe6c44086b48b54982fdba&amp;type=3#Control_1" />
+    <ui:Template name="Control_1" src="project://database/Assets/Resources/Templates/Control_1.uxml?fileID=9197481963319205126&amp;guid=438672fd85fe6c44086b48b54982fdba&amp;type=3#Control_1" />
     <Style src="project://database/Assets/menuStyle.uss?fileID=7433441132597879392&amp;guid=3a4bd96927767a7448c31e1f346d2431&amp;type=3#menuStyle" />
     <ui:VisualElement name="Header" style="flex-grow: 1;">
         <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" style="font-size: 40px;" />
@@ -204,21 +204,13 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="Right" class="submenus submenu-background" style="display: flex;" />
+        <ui:VisualElement name="Right" class="submenus submenu-background" style="display: flex;">
+            <Lab4 my-int="81" style="background-color: rgb(0, 0, 0); height: 105px;" />
+        </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="Foot" style="flex-grow: 1; flex-direction: row; justify-content: flex-start; height: auto;">
         <ui:Instance template="Control_1" name="Control_1" />
-        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
-            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
-            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
-        </ui:VisualElement>
-        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
-            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
-            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
-        </ui:VisualElement>
-        <ui:VisualElement name="Control_1" style="align-items: center; flex-direction: row; justify-content: center;">
-            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/kenney_game-icons/PNG/Black/2x/buttonA.png?fileID=2800000&amp;guid=ca6de018d4fc2574d928b9482e14def6&amp;type=3#buttonA&apos;); display: flex; width: 50px; height: 50px;" />
-            <ui:Label tabindex="-1" text="Play" display-tooltip-when-elided="false" class="control-text" />
-        </ui:VisualElement>
+        <ui:Instance template="Control_1" name="Control_1" />
+        <ui:Instance template="Control_1" name="Control_1" />
     </ui:VisualElement>
 </ui:UXML>

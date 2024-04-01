@@ -1,0 +1,73 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class Lab4 : VisualElement
+{
+    public new class UxmlFactory : UxmlFactory<Lab4,UxmlTraits> { };
+
+    public new class UxmlTraits : VisualElement.UxmlTraits
+    {
+        UxmlStringAttributeDescription m_String =
+            new UxmlStringAttributeDescription { name = "my-string", defaultValue = "default_value" };
+        UxmlIntAttributeDescription m_Int =
+            new UxmlIntAttributeDescription { name = "my-int", defaultValue = 2 };
+        public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
+        {
+            base.Init(ve, bag, cc);
+            var ate = ve as Lab4;
+
+            ate.type = m_String.GetValueFromBag(bag, cc);
+            ate.valor = m_Int.GetValueFromBag(bag, cc);
+        }
+
+    }
+
+
+    List<VisualElement> m_List = new List<VisualElement>();
+    VisualElement m_VisualElement1 = new VisualElement();
+    VisualElement m_VisualElement2 = new VisualElement();
+    VisualElement m_VisualElement3 = new VisualElement();
+    VisualElement m_VisualElement4 = new VisualElement();
+    VisualElement m_VisualElement5 = new VisualElement();
+    
+    int valor;
+    string type;
+
+    public string Type { get; set; }
+    public int Valor
+    {
+        get=>valor;
+        set
+        {
+            valor = value;
+            ValueFunction(valor);
+        }
+    }
+
+    void ValueFunction(int val)
+    {
+        Debug.Log("Hola");
+        for (int i = 0; i < val; i++)
+        {
+            m_List[i].style.backgroundColor = new Color(0,0,0);
+        }
+    }
+
+    public Lab4()
+    {
+        for(int i = 0; i< 5; i++)
+        {
+            VisualElement ve = new VisualElement();
+            ve.style.width = 100;
+            ve.style.height = 100;
+            ve.style.backgroundColor = Color.black;
+            ve.style.backgroundImage = EditorGUIUtility.FindTexture("CloudConnect");
+            m_List.Add(ve);
+            hierarchy.Add(ve);
+        }
+    }
+}
