@@ -22,6 +22,8 @@ public class Lab4 : VisualElement
 
             ate.type = m_String.GetValueFromBag(bag, cc);
             ate.valor = m_Int.GetValueFromBag(bag, cc);
+            ate.ValueFunction();
+            ate.typeFunction();
         }
 
     }
@@ -34,26 +36,45 @@ public class Lab4 : VisualElement
     VisualElement m_VisualElement4 = new VisualElement();
     VisualElement m_VisualElement5 = new VisualElement();
     
-    int valor;
+    int valor = 2;
     string type;
 
-    public string Type { get; set; }
+    public string Type { 
+        get=>type; 
+        set {
+            type = value;
+            typeFunction(); }
+    }
     public int Valor
     {
         get=>valor;
         set
         {
             valor = value;
-            ValueFunction(valor);
+            ValueFunction();
         }
     }
 
-    void ValueFunction(int val)
+    void ValueFunction()
     {
         Debug.Log("Hola");
-        for (int i = 0; i < val; i++)
+        for (int i = 0; i < 5; i++)
         {
-            m_List[i].style.backgroundColor = new Color(0,0,0);
+            if(i <valor)
+                m_List[i].style.unityBackgroundImageTintColor = new Color(1,1,1);
+                
+                //m_List[i].style.display = DisplayStyle.Flex;
+            else
+                m_List[i].style.unityBackgroundImageTintColor = new Color(0.5f,0.5f,0.5f);
+                //m_List[i].style.display = DisplayStyle.None;
+        }
+    }
+
+    void typeFunction()
+    {
+        foreach(VisualElement ve in m_List)
+        {
+            ve.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(type));
         }
     }
 
@@ -65,7 +86,7 @@ public class Lab4 : VisualElement
             ve.style.width = 100;
             ve.style.height = 100;
             ve.style.backgroundColor = Color.black;
-            ve.style.backgroundImage = EditorGUIUtility.FindTexture("CloudConnect");
+            ve.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(type));
             m_List.Add(ve);
             hierarchy.Add(ve);
         }
