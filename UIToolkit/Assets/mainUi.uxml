@@ -205,7 +205,8 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Right" class="submenus submenu-background" style="display: flex;">
-            <Lab4 my-string="arrowRight" my-int="11" style="flex-direction: column;" />
+            <Lab4 my-string="audioOn" my-int="2" style="flex-direction: row;" />
+            <Lab4 my-string="arrowRight" my-int="4" style="flex-direction: row;" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="Foot" style="flex-grow: 1; flex-direction: row; justify-content: flex-start; height: auto;">

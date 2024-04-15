@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Plantilla" style="flex-grow: 1; background-color: rgb(0, 255, 16); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; flex-basis: auto; width: 200px; height: 300px;">
+        <ui:VisualElement name="top" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/araceli&apos;);" />
+        <ui:VisualElement name="mid" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Perico" display-tooltip-when-elided="true" name="Nombre" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Peyote" display-tooltip-when-elided="true" name="Apellido" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
