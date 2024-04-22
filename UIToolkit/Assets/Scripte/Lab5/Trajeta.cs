@@ -3,7 +3,8 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 
-namespace Lab5b_namespace { 
+namespace Lab6_namespace
+{ 
     public class Trajeta
     {
         Individuo miIndividuo;
@@ -11,7 +12,6 @@ namespace Lab5b_namespace {
 
         Label nombreLabel;
         Label apellidoLabel;
-        VisualElement imagen;
 
         public Trajeta (VisualElement tarjetaRoot, Individuo individuo) 
         { 
@@ -20,13 +20,12 @@ namespace Lab5b_namespace {
 
             nombreLabel = tarjetaRoot.Q<Label>("Nombre");
             apellidoLabel = tarjetaRoot.Q<Label>("Apellido");
-            imagen = tarjetaRoot.Q("top");
-            tarjetaRoot.userData = miIndividuo;
+            //tarjetaRoot.userData = miIndividuo;
 
-            tarjetaRoot.
-                Query(className: "tarjeta").
-                Descendents<VisualElement>().
-                ForEach(elem => elem.pickingMode = PickingMode.Ignore);
+            //tarjetaRoot.
+                //Query(className: "tarjeta").
+                //Descendents<VisualElement>().
+                //ForEach(elem => elem.pickingMode = PickingMode.Ignore);
 
             UpdateUI();
 

@@ -1,5 +1,4 @@
-using lab5b_namespace;
-using Lab5b_namespace;
+//using lab5b_namespace;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,11 +6,12 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 
+
 public class Lab5 : MonoBehaviour
 {
 
-    List<Individuo> individuos;
-    Individuo selecIndividuo;
+    //List<Individuo> individuos;
+    //Individuo selecIndividuo;
 
     VisualElement plantilla;
     VisualElement plantilla2;
@@ -43,10 +43,10 @@ private void OnEnable()
         //input_nombre.SetValueWithoutNotify(individuoPrueba.Nombre);
         //input_apellido.SetValueWithoutNotify(individuoPrueba.Apellido);
 
-        plantilla = root.Q("Tarjeta1");
-        plantilla2 = root.Q("Tarjeta2");
-        plantilla3 = root.Q("Tarjeta3");
-        plantilla4 = root.Q("Tarjeta4");
+        //plantilla = root.Q("Tarjeta1");
+        //plantilla2 = root.Q("Tarjeta2");
+        //plantilla3 = root.Q("Tarjeta3");
+        //plantilla4 = root.Q("Tarjeta4");
 
 
         input_nombre = root.Q<TextField>("InputNombre");
@@ -60,7 +60,7 @@ private void OnEnable()
         }
 
 
-        individuos = BaseDatos.getData();
+       // individuos = BaseDatos.getData();
 
         VisualElement panelDcha = root.Q("dcha");
         panelDcha.RegisterCallback<ClickEvent>(SeleccionIndividuo);
@@ -75,10 +75,10 @@ private void OnEnable()
     void SeleccionIndividuo(ClickEvent evt)
     {
         plantillaSelect = evt.target as VisualElement;
-        selecIndividuo = plantillaSelect.userData as Individuo;
+       // selecIndividuo = plantillaSelect.userData as Individuo;
 
-        input_nombre.SetValueWithoutNotify(selecIndividuo.Nombre);
-        input_apellido.SetValueWithoutNotify(selecIndividuo.Apellido);
+        //input_nombre.SetValueWithoutNotify(selecIndividuo.Nombre);
+        //input_apellido.SetValueWithoutNotify(selecIndividuo.Apellido);
 
     }
 
@@ -86,14 +86,14 @@ private void OnEnable()
     {
         //Label nombreLabel = plantilla.Q<Label>("Nombre");
         //nombreLabel.text = evt.newValue;
-        selecIndividuo.Nombre = evt.newValue;
+       // selecIndividuo.Nombre = evt.newValue;
     }
 
     void CambioApellido(ChangeEvent<string> evt)
     {
         //Label apellidoLabel = plantilla.Q<Label>("Apellido");
         //apellidoLabel.text = evt.newValue;
-        selecIndividuo.Apellido = evt.newValue;
+        //selecIndividuo.Apellido = evt.newValue;
     }
     void CambioIcono(ClickEvent evt)
     {
@@ -107,9 +107,9 @@ private void OnEnable()
     void InitializeUI()
 
     {
-        Trajeta tar1 = new Trajeta(plantilla, individuos[0]);
-        Trajeta tar2 = new Trajeta(plantilla2, individuos[1]);
-        Trajeta tar3 = new Trajeta(plantilla3, individuos[2]);
-        Trajeta tar4 = new Trajeta(plantilla4, individuos[3]);
+        //Trajeta tar1 = new Trajeta(plantilla, individuos[0]);
+        //Trajeta tar2 = new Trajeta(plantilla2, individuos[1]);
+        //Trajeta tar3 = new Trajeta(plantilla3, individuos[2]);
+        //Trajeta tar4 = new Trajeta(plantilla4, individuos[3]);
     }
 }

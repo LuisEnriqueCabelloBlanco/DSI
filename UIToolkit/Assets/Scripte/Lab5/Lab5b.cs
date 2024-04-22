@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+namespace Lab6_namespace
+{
 namespace Lab5b_namespace
 {
     public class Lab5b : MonoBehaviour
@@ -44,4 +46,5 @@ namespace Lab5b_namespace
         }
 
     }
+}
 }

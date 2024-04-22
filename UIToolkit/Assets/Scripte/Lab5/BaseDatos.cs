@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace lab5b_namespace
+namespace Lab6_namespace
 {
     public class BaseDatos
     {

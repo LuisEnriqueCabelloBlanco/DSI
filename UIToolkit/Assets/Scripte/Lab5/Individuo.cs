@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 
 
-namespace Lab5b_namespace
+namespace Lab6_namespace
 {
     public class Individuo
     {
