@@ -20,7 +20,7 @@ namespace Lab6_namespace
 
             nombreLabel = tarjetaRoot.Q<Label>("Nombre");
             apellidoLabel = tarjetaRoot.Q<Label>("Apellido");
-            //tarjetaRoot.userData = miIndividuo;
+            tarjetaRoot.userData = miIndividuo;
 
             //tarjetaRoot.
                 //Query(className: "tarjeta").

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Tarjeta" picking-mode="Ignore" class="tarjeta" style="flex-grow: 0; background-color: rgb(0, 255, 16); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; flex-basis: auto; width: 127px; height: 200px;">
+        <ui:VisualElement name="top" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/araceli&apos;); height: 60px; -unity-background-scale-mode: scale-and-crop;" />
+        <ui:VisualElement name="mid" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Perico" display-tooltip-when-elided="true" name="Nombre" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bottom" picking-mode="Ignore" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Peyote" display-tooltip-when-elided="true" name="Apellido" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

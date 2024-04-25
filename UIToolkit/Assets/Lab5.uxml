@@ -1,8 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Template name="Plantilla" src="project://database/Assets/Resources/Templates/Plantilla.uxml?fileID=9197481963319205126&amp;guid=b09ddcab51861ed41aebc5e1d1f0e4ec&amp;type=3#Plantilla" />
     <Style src="project://database/Assets/Lab5.uss?fileID=7433441132597879392&amp;guid=e0748c963225f174e96a68f47b70ae01&amp;type=3#Lab5" />
     <ui:VisualElement name="contenedor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
-        <ui:VisualElement name="izda" style="flex-grow: 1; background-color: rgb(226, 215, 35); width: 21px;">
+        <ui:VisualElement name="izda" style="flex-grow: 0; background-color: rgb(226, 215, 35); width: 500px; height: auto; flex-shrink: 1;">
             <ui:VisualElement name="header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
                 <ui:VisualElement style="flex-grow: 1; background-color: rgb(0, 0, 0); background-image: resource(&apos;Images/araceli&apos;);" />
                 <ui:VisualElement style="flex-grow: 1; background-color: rgb(0, 0, 0); background-image: resource(&apos;Images/aguita&apos;);" />
@@ -11,17 +10,12 @@
             <ui:VisualElement name="body" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: space-between;">
                 <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="InputNombre" />
                 <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="InputApellido" />
-                <ui:Toggle text="Modificar" name="ToggleModify" value="false" />
+                <ui:Toggle text="Modificar" name="ToggleModificar" value="false" />
             </ui:VisualElement>
             <ui:VisualElement name="footer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row-reverse;">
-                <ui:Button text="Crear" display-tooltip-when-elided="true" />
+                <ui:Button text="Crear" display-tooltip-when-elided="true" name="BotonCrear" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="dcha" style="flex-grow: 1; background-color: rgb(7, 30, 108); flex-direction: column-reverse;">
-            <ui:Instance template="Plantilla" name="Tarjeta1" class="tarjeta" />
-            <ui:Instance template="Plantilla" name="Tarjeta2" class="tarjeta" />
-            <ui:Instance template="Plantilla" name="Tarjeta3" class="tarjeta" />
-            <ui:Instance template="Plantilla" name="Tarjeta4" class="tarjeta" />
-        </ui:VisualElement>
+        <ui:VisualElement name="dcha" style="flex-grow: 1; background-color: rgb(7, 30, 108); flex-direction: row; justify-content: flex-start; align-items: stretch;" />
     </ui:VisualElement>
 </ui:UXML>
