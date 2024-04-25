@@ -5,7 +5,6 @@ using UnityEngine.Assertions.Must;
 using System.Collections.Generic;
 using System.Linq;
 using static UnityEngine.GraphicsBuffer;
-using System.Linq;
 //using Lab5b_namespace;
 
 namespace Lab6_namespace
@@ -53,13 +52,21 @@ namespace Lab6_namespace
                 individuoSelec = individuo;
 
                 list_individuos.Add(individuo);
-                list_individuos.ForEach(elem =>
+                //list_individuos.ForEach(elem =>
+                //{
+                //    Debug.Log(elem.Nombre + " " + elem.Apellido);
+                //    string jsonIndividuo = JsonUtility.ToJson(elem);
+                //    Debug.Log(jsonIndividuo);
+                //}
+                //);
+                string listaToJson = jsonHelperIndividuo.ToJson(list_individuos, true);
+                Debug.Log(listaToJson);
+
+                List<Individuo> jsonToList = jsonHelperIndividuo.FromJson<Individuo>(listaToJson);
+                jsonToList.ForEach(elem =>
                 {
                     Debug.Log(elem.Nombre + " " + elem.Apellido);
-                    string jsonIndividuo = JsonUtility.ToJson(elem);
-                    Debug.Log(jsonIndividuo);
-                }
-                );
+                });
             }
 
         }
