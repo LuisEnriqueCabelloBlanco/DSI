@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GrannySim24.uss?fileID=7433441132597879392&amp;guid=93304dd5183cd62469b6dea078ef6455&amp;type=3#GrannySim24" />
+    <ui:VisualElement name="Canvas" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+        <ui:VisualElement name="Left" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 357px;">
+            <ui:VisualElement name="GranmaStats" class="gerealUI" style="flex-grow: 1; background-color: rgb(85, 236, 227); flex-direction: column;">
+                <ui:Label tabindex="-1" text="Milagros" display-tooltip-when-elided="true" name="Name" style="font-size: 51px; -unity-text-align: upper-center;" />
+                <ui:VisualElement name="Mid" style="background-color: rgba(0, 0, 0, 0); background-image: none; flex-direction: row; align-items: center; height: 40%;">
+                    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" class="button" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/drip&apos;); height: 170px;" />
+                    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" name="Button" class="button" style="background-image: resource(&apos;arrowRight&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Stats" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); min-height: 0; height: 40%;">
+                    <ui:VisualElement name="Stat" style="background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Type" />
+                        <Lab4 my-int="2" my-string="arrowRight" style="flex-direction: row; flex-grow: 1; justify-content: center;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button text="COSER" display-tooltip-when-elided="true" class="gerealUI" style="height: 169px; font-size: 80px; background-color: rgb(85, 191, 236);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="Tools" class="gerealUI" style="background-color: rgb(85, 236, 227); flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Herramientas" display-tooltip-when-elided="true" name="Titulo" style="-unity-text-align: upper-center; font-size: 51px;" />
+                <ui:VisualElement name="Equipment" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: center;">
+                    <ui:VisualElement name="ToolCard" class="tools">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 41px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" class="tools" />
+                    <ui:VisualElement name="VisualElement" class="tools" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="GrannyTip" class="gerealUI" style="background-color: rgb(217, 217, 217); flex-grow: 0; height: 200px;">
+                <ui:Label tabindex="-1" text="&quot;Ponte Una Chaqueta Que Hace Frio&quot;" display-tooltip-when-elided="true" name="Tip" style="padding-left: 19px; padding-right: 19px; padding-top: 19px; padding-bottom: 19px; font-size: 69px; white-space: normal; text-overflow: clip; -unity-text-align: middle-center; flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
