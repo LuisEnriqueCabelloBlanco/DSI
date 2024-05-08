@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Camino
   m_EditorClassIdentifier: 
   grandmaName: Camino
-  fotoPath: 
+  fotoPath: Images/camino
   te: 1
   edad: 5
   nietos: 3

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MariaJose
   m_EditorClassIdentifier: 
   grandmaName: "Maria Jos\xE9"
-  fotoPath: 
+  fotoPath: Images/mariajose
   te: 5
   edad: 2
   nietos: 3

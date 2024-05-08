@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Milagros
   m_EditorClassIdentifier: 
   grandmaName: Milagros
-  fotoPath: 
+  fotoPath: Images/milagros
   te: 3
   edad: 2
   nietos: 4
