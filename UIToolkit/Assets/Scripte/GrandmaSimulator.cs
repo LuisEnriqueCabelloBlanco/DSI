@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,7 +8,7 @@ using UnityEngine.UIElements;
 public class GrandmaSimulator : MonoBehaviour
 {
     VisualElement grandmaPhoto;
-    VisualElment grandmaName;
+    Label grandmaName;
     VisualElement nextArrow;
 
 
@@ -22,17 +23,32 @@ public class GrandmaSimulator : MonoBehaviour
 
         nextArrow = root.Q("Next");
         nextArrow.RegisterCallback<ClickEvent>(NextGrandma);
-
+        previousArrow = root.Q("Previous");
+        previousArrow.RegisterCallback<ClickEvent>(PreviousGrandma);
+        grandmaName = root.Q<Label>("Name");
+        grandmaPhoto = root.Q("Photo");
     }
 
 
 
      void NextGrandma(ClickEvent evt)
      {
-        currentGrandma = (currentGrandma + 1) % grandmas.size();
-        ScriptableGrandmas currGrandmaData = grandmas.get(currentGrandma);
+        currentGrandma = (currentGrandma + 1) % grandmas.Count;
+        ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
 
-        //grandmaName = currGrandmaData.grandmaName;
+        grandmaName.text = currGrandmaData.grandmaName;
+        //Label nombreLabel = plantilla.Q<Label>("Nombre");
+        //nombreLabel.text = evt.newValue;
+        // selecIndividuo.Nombre = evt.newValue;
+
+     }
+    void PreviousGrandma(ClickEvent evt)
+    {
+        //hay q mirar como se hacia esto
+        currentGrandma = Math.Abs((currentGrandma - 1) % grandmas.Count);
+        ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
+
+        grandmaName.text = currGrandmaData.grandmaName;
         //Label nombreLabel = plantilla.Q<Label>("Nombre");
         //nombreLabel.text = evt.newValue;
         // selecIndividuo.Nombre = evt.newValue;
