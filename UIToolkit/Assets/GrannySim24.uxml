@@ -5,9 +5,9 @@
             <ui:VisualElement name="GranmaStats" class="gerealUI" style="flex-grow: 1; background-color: rgb(85, 236, 227); flex-direction: column;">
                 <ui:Label tabindex="-1" text="Milagros" display-tooltip-when-elided="true" name="Name" style="font-size: 40px; -unity-text-align: upper-center; margin-bottom: 7px; padding-bottom: 7px;" />
                 <ui:VisualElement name="Mid" style="background-color: rgba(0, 0, 0, 0); background-image: none; flex-direction: row; align-items: center; height: 40%;">
-                    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" class="button" />
-                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/drip&apos;); height: 117px;" />
-                    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" name="Button" class="button" style="background-image: resource(&apos;arrowRight&apos;);" />
+                    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" name="Previous" view-data-key="Previous" class="button" />
+                    <ui:VisualElement name="Photo" view-data-key="Photo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/drip&apos;); height: 117px;" />
+                    <ui:Button display-tooltip-when-elided="true" enable-rich-text="false" name="Next" view-data-key="Next" class="button" style="background-image: resource(&apos;arrowRight&apos;);" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Stats" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); min-height: 0; height: 40%;">
                     <ui:VisualElement name="Stat" style="background-color: rgba(0, 0, 0, 0); flex-direction: row;">

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/GrandmaScriptableObject", order = 1)]
-public class SpawnManagerScriptableObject : ScriptableObject
+public class ScriptableGrandmas : ScriptableObject
 {
     public string grandmaName;
     public string fotoPath;
