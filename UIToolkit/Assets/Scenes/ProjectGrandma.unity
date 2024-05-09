@@ -252,6 +252,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a648cccddda7ed640bf86907f691a62d, type: 2}
   - {fileID: 11400000, guid: 7d0b73878e5095e4aafc1b5b664e3c24, type: 2}
   - {fileID: 11400000, guid: c0a85bdf203eeed4d86f3c7ca051dd36, type: 2}
+  grannyTips:
+  - "\"Ponte Una Chaqueta Que hace Fr\xEDo\""
+  - "\"Las galletas se hacen con cari\xF1o y con amor\""
+  - '"Bombardeen la complutense"'
+  - '"En mis tiempos todo era campo"'
 --- !u!114 &1604899130
 MonoBehaviour:
   m_ObjectHideFlags: 0
