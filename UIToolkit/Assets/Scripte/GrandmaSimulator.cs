@@ -10,8 +10,12 @@ public class GrandmaSimulator : MonoBehaviour
 {
     VisualElement grandmaPhoto;
     Label grandmaName;
-    bool selectingTools= false;
+    bool selectingTools = false;
     ScrollView toolScroll;
+
+    Label consejo;
+    int consejoActual = 0;
+    float chaangeTimer, timeToChange = 5;
 
 
 
@@ -36,6 +40,10 @@ public class GrandmaSimulator : MonoBehaviour
         List<VisualElement> toolsList = root.Query(className: "tools").ToList();
         toolsList.ForEach((ve) => { ve.RegisterCallback<ClickEvent>(CLickTool); });
         toolScroll = root.Q<ScrollView>("ToolSelector");
+
+        consejo = root.Q<Label>("Tip");
+        consejo.text = grannyTips[consejoActual];
+        chaangeTimer = 0f;
 
         grandmaName = root.Q<Label>("Name");
         grandmaPhoto = root.Q("Photo");
@@ -94,6 +102,17 @@ public class GrandmaSimulator : MonoBehaviour
         grandmaPhoto.style.backgroundImage = new StyleBackground(Resources.Load<Texture2D>(currGrandmaData.fotoPath));
     }
 
+    void Update()
+    {
+        chaangeTimer += Time.deltaTime;
+        if (chaangeTimer >= timeToChange)
+        {
+            consejoActual = (consejoActual + 1) % grannyTips.Count;
+            consejo.text = grannyTips[consejoActual];
+            chaangeTimer = 0f;
 
+        }
+
+    }
 
 }

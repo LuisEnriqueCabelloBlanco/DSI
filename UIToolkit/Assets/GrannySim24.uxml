@@ -45,20 +45,20 @@
                 </ui:VisualElement>
                 <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="ToolSelector" mode="Horizontal" focusable="false" horizontal-scroller-visibility="Auto" style="display: none;">
                     <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
-                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
-                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/rosario&apos;);" />
+                        <ui:Label tabindex="-1" text="Rosario" display-tooltip-when-elided="true" name="Rosario" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
-                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
-                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/propinilla&apos;);" />
+                        <ui:Label tabindex="-1" text="Propinilla" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
-                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
-                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/perol&apos;);" />
+                        <ui:Label tabindex="-1" text="Perol" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
-                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
-                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/caramelo&apos;);" />
+                        <ui:Label tabindex="-1" text="Caramelo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
                 </ui:ScrollView>
             </ui:VisualElement>
