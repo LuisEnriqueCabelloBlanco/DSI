@@ -17,6 +17,9 @@ public class GrandmaSimulator : MonoBehaviour
     [SerializeField]
     List<ScriptableGrandmas> grandmas;
 
+    Lab4 teStats;
+    Lab4 nietosStats;
+
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -27,6 +30,11 @@ public class GrandmaSimulator : MonoBehaviour
         previousArrow.RegisterCallback<ClickEvent>(PreviousGrandma);
         grandmaName = root.Q<Label>("Name");
         grandmaPhoto = root.Q("Photo");
+
+        teStats = root.Q<Lab4>("Te");
+        //teStats.changeImage("Images/te");
+        nietosStats = root.Q<Lab4>("Nietos");
+        //nietosStats.changeImage("Images/nieto");
     }
 
 
@@ -37,21 +45,18 @@ public class GrandmaSimulator : MonoBehaviour
         ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
 
         grandmaName.text = currGrandmaData.grandmaName;
-        //Label nombreLabel = plantilla.Q<Label>("Nombre");
-        //nombreLabel.text = evt.newValue;
-        // selecIndividuo.Nombre = evt.newValue;
-
+        nietosStats.changeValue(currGrandmaData.nietos);
+        teStats.changeValue(currGrandmaData.te);
      }
+
     void PreviousGrandma(ClickEvent evt)
     {
-        //hay q mirar como se hacia esto
-        currentGrandma = Math.Abs((currentGrandma - 1) % grandmas.Count);
+        currentGrandma = (grandmas.Count + currentGrandma - 1) % grandmas.Count;
         ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
 
         grandmaName.text = currGrandmaData.grandmaName;
-        //Label nombreLabel = plantilla.Q<Label>("Nombre");
-        //nombreLabel.text = evt.newValue;
-        // selecIndividuo.Nombre = evt.newValue;
+        nietosStats.changeValue(currGrandmaData.nietos);
+        teStats.changeValue(currGrandmaData.te);
 
     }
 

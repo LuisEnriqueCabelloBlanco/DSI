@@ -30,11 +30,11 @@ public class Lab4 : VisualElement
 
 
     List<VisualElement> m_List = new List<VisualElement>();
-    VisualElement m_VisualElement1 = new VisualElement();
-    VisualElement m_VisualElement2 = new VisualElement();
-    VisualElement m_VisualElement3 = new VisualElement();
-    VisualElement m_VisualElement4 = new VisualElement();
-    VisualElement m_VisualElement5 = new VisualElement();
+    //VisualElement m_VisualElement1 = new VisualElement();
+    //VisualElement m_VisualElement2 = new VisualElement();
+    //VisualElement m_VisualElement3 = new VisualElement();
+    //VisualElement m_VisualElement4 = new VisualElement();
+    //VisualElement m_VisualElement5 = new VisualElement();
     
     int valor = 2;
     string type;
@@ -57,7 +57,6 @@ public class Lab4 : VisualElement
 
     void ValueFunction()
     {
-        Debug.Log("Hola");
         for (int i = 0; i < 5; i++)
         {
             if(i <valor)
@@ -78,14 +77,26 @@ public class Lab4 : VisualElement
         }
     }
 
+    public void changeValue(int num)
+    {
+        valor = num;
+        ValueFunction();
+    }
+
+    public void changeImage(string path)
+    {
+        type = path;
+        typeFunction();
+        ValueFunction();
+    }
+
     public Lab4()
     {
         for(int i = 0; i< 5; i++)
         {
             VisualElement ve = new VisualElement();
-            ve.style.width = 100;
-            ve.style.height = 100;
-            ve.style.backgroundColor = Color.black;
+            ve.style.width = 50;
+            ve.style.height = 50;
             ve.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(type));
             m_List.Add(ve);
             hierarchy.Add(ve);

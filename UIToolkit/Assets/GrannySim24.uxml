@@ -12,7 +12,11 @@
                 <ui:VisualElement name="Stats" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); min-height: 0; height: 40%;">
                     <ui:VisualElement name="Stat" style="background-color: rgba(0, 0, 0, 0); flex-direction: row;">
                         <ui:Label tabindex="-1" text="TÉ" display-tooltip-when-elided="true" name="Type" />
-                        <Lab4 my-int="2" my-string="arrowRight" style="flex-direction: row; flex-grow: 1; justify-content: center; height: 70px;" />
+                        <Lab4 my-int="2" my-string="arrowRight" name="Te" style="flex-direction: row; flex-grow: 1; justify-content: center; height: 70px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Stat" style="background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+                        <ui:Label tabindex="-1" text="NIETOS" display-tooltip-when-elided="true" name="Type" />
+                        <Lab4 my-int="2" my-string="arrowRight" name="Nietos" style="flex-direction: row; flex-grow: 1; justify-content: center; height: 70px;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
