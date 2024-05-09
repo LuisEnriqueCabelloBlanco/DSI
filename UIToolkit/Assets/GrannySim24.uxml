@@ -19,7 +19,7 @@
                         <Lab4 my-int="2" my-string="arrowRight" name="Nietos" style="flex-direction: row; flex-grow: 1; justify-content: center; height: 70px;" />
                     </ui:VisualElement>
                     <ui:VisualElement name="Stat" style="background-color: rgba(0, 0, 0, 0); flex-direction: row;">
-                        <ui:Label tabindex="-1" text="NIETOS" display-tooltip-when-elided="true" name="Type" />
+                        <ui:Label tabindex="-1" text="EDAD" display-tooltip-when-elided="true" name="Type" />
                         <Lab4 my-int="2" my-string="arrowRight" name="Edad" style="flex-direction: row; flex-grow: 1; justify-content: center; height: 70px;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
@@ -59,6 +59,18 @@
                     <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
                         <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/caramelo&apos;);" />
                         <ui:Label tabindex="-1" text="Caramelo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ToolCard" class="tools">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
+                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ToolCard" class="tools tool">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/zapatilla&apos;);" />
+                        <ui:Label tabindex="-1" text="Zapatilla" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ToolCard" class="tools tool">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/rebeca&apos;);" />
+                        <ui:Label tabindex="-1" text="Rebequita" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
                 </ui:ScrollView>
             </ui:VisualElement>

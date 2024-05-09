@@ -257,6 +257,9 @@ MonoBehaviour:
   - "\"Las galletas se hacen con cari\xF1o y con amor\""
   - "\"Usar el arma secundaria es mas r\xE1pido que recargar\""
   - '"En mis tiempos todo era campo"'
+  - '"Te hago un huevo, hijo"'
+  - '"Es que yo a tu edad..."'
+  - "\"Hasta ma\xF1ana, si Dios quiere\""
 --- !u!114 &1604899130
 MonoBehaviour:
   m_ObjectHideFlags: 0
