@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,13 +10,16 @@ public class GrandmaSimulator : MonoBehaviour
 {
     VisualElement grandmaPhoto;
     Label grandmaName;
-    
+    bool selectingTools= false;
+    ScrollView toolScroll;
 
 
-    
+
     private int currentGrandma = 0;
     [SerializeField]
     List<ScriptableGrandmas> grandmas;
+    [SerializeField]
+    List<String> grannyTips;
 
     Lab4 teStats;
     Lab4 nietosStats;
@@ -29,6 +33,10 @@ public class GrandmaSimulator : MonoBehaviour
         nextArrow.RegisterCallback<ClickEvent>(NextGrandma);
         VisualElement previousArrow = root.Q("Previous");
         previousArrow.RegisterCallback<ClickEvent>(PreviousGrandma);
+        List<VisualElement> toolsList = root.Query(className: "tools").ToList();
+        toolsList.ForEach((ve) => { ve.RegisterCallback<ClickEvent>(CLickTool); });
+        toolScroll = root.Q<ScrollView>("ToolSelector");
+
         grandmaName = root.Q<Label>("Name");
         grandmaPhoto = root.Q("Photo");
 
@@ -59,6 +67,20 @@ public class GrandmaSimulator : MonoBehaviour
 
         setGrandma();
 
+    }
+
+    void CLickTool(ClickEvent evt)
+    {
+        if (selectingTools)
+        {
+            selectingTools = false;
+            toolScroll.style.display = DisplayStyle.None;
+        }
+        else
+        {
+            toolScroll.style.display = DisplayStyle.Flex;
+            selectingTools = true;
+        }
     }
 
     void setGrandma()

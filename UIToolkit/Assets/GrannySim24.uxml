@@ -29,20 +29,38 @@
         <ui:VisualElement name="Right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
             <ui:VisualElement name="Tools" class="gerealUI" style="background-color: rgb(85, 236, 227); flex-grow: 1;">
                 <ui:Label tabindex="-1" text="Herramientas" display-tooltip-when-elided="true" name="Titulo" style="-unity-text-align: upper-center; font-size: 51px;" />
-                <ui:VisualElement name="Equipment" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: center;">
+                <ui:VisualElement name="Equipment" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: center; display: flex;">
                     <ui:VisualElement name="ToolCard" class="tools">
                         <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
                         <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="ToolCard" class="tools">
+                    <ui:VisualElement name="ToolCard" class="tools tool">
                         <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/zapatilla&apos;);" />
                         <ui:Label tabindex="-1" text="Zapatilla" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="ToolCard" class="tools">
+                    <ui:VisualElement name="ToolCard" class="tools tool">
                         <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/rebeca&apos;);" />
                         <ui:Label tabindex="-1" text="Rebequita" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="ToolSelector" mode="Horizontal" focusable="false" horizontal-scroller-visibility="Auto" style="display: none;">
+                    <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
+                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
+                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
+                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="ToolCard" class="tools" style="height: 218px;">
+                        <ui:VisualElement name="Icon" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;Images/ganchillo&apos;);" />
+                        <ui:Label tabindex="-1" text="Ganchillo" display-tooltip-when-elided="true" name="Atrib" style="-unity-text-align: upper-center; white-space: normal; font-size: 20px; padding-bottom: 6px; padding-right: 11px; padding-left: 11px;" />
+                    </ui:VisualElement>
+                </ui:ScrollView>
             </ui:VisualElement>
             <ui:VisualElement name="GrannyTip" class="gerealUI" style="background-color: rgb(217, 217, 217); flex-grow: 0; height: 200px;">
                 <ui:Label tabindex="-1" text="&quot;Ponte Una Chaqueta Que Hace Frio&quot;" display-tooltip-when-elided="true" name="Tip" style="padding-left: 19px; padding-right: 19px; padding-top: 19px; padding-bottom: 19px; font-size: 55px; white-space: normal; text-overflow: clip; -unity-text-align: middle-center; flex-grow: 1;" />

@@ -27,3 +27,12 @@
     width: 40px;
     height: 165px;
 }
+
+.unity-scroll-view--vertical {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tools:hover {
+    background-color: rgb(157, 207, 204);
+}
