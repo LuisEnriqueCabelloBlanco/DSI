@@ -9,24 +9,25 @@ public class GrandmaSimulator : MonoBehaviour
 {
     VisualElement grandmaPhoto;
     Label grandmaName;
-    VisualElement nextArrow;
+    
 
 
-    VisualElement previousArrow;
+    
     private int currentGrandma = 0;
     [SerializeField]
     List<ScriptableGrandmas> grandmas;
 
     Lab4 teStats;
     Lab4 nietosStats;
+    Lab4 edadStats;
 
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
 
-        nextArrow = root.Q("Next");
+        VisualElement nextArrow = root.Q("Next");
         nextArrow.RegisterCallback<ClickEvent>(NextGrandma);
-        previousArrow = root.Q("Previous");
+        VisualElement previousArrow = root.Q("Previous");
         previousArrow.RegisterCallback<ClickEvent>(PreviousGrandma);
         grandmaName = root.Q<Label>("Name");
         grandmaPhoto = root.Q("Photo");
@@ -35,6 +36,10 @@ public class GrandmaSimulator : MonoBehaviour
         teStats.changeImage("Images/te");
         nietosStats = root.Q<Lab4>("Nietos");
         nietosStats.changeImage("Images/nieto");
+        edadStats = root.Q<Lab4>("Edad");
+        edadStats.changeImage("Images/edad");
+
+        setGrandma();
     }
 
 
@@ -44,10 +49,7 @@ public class GrandmaSimulator : MonoBehaviour
         currentGrandma = (currentGrandma + 1) % grandmas.Count;
         ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
 
-        grandmaName.text = currGrandmaData.grandmaName;
-        nietosStats.changeValue(currGrandmaData.nietos);
-        teStats.changeValue(currGrandmaData.te);
-        grandmaPhoto.style.backgroundImage = new StyleBackground(Resources.Load<Texture2D>(currGrandmaData.fotoPath));
+        setGrandma();
     }
 
     void PreviousGrandma(ClickEvent evt)
@@ -55,10 +57,19 @@ public class GrandmaSimulator : MonoBehaviour
         currentGrandma = (grandmas.Count + currentGrandma - 1) % grandmas.Count;
         ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
 
+        setGrandma();
+
+    }
+
+    void setGrandma()
+    {
+        ScriptableGrandmas currGrandmaData = grandmas[currentGrandma];
+
         grandmaName.text = currGrandmaData.grandmaName;
         nietosStats.changeValue(currGrandmaData.nietos);
         teStats.changeValue(currGrandmaData.te);
-
+        edadStats.changeValue(currGrandmaData.edad);
+        grandmaPhoto.style.backgroundImage = new StyleBackground(Resources.Load<Texture2D>(currGrandmaData.fotoPath));
     }
 
 
