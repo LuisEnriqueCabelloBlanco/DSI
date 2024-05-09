@@ -47,7 +47,8 @@ public class GrandmaSimulator : MonoBehaviour
         grandmaName.text = currGrandmaData.grandmaName;
         nietosStats.changeValue(currGrandmaData.nietos);
         teStats.changeValue(currGrandmaData.te);
-     }
+        grandmaPhoto.style.backgroundImage = new StyleBackground(Resources.Load<Texture2D>(currGrandmaData.fotoPath));
+    }
 
     void PreviousGrandma(ClickEvent evt)
     {
