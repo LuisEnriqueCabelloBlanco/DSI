@@ -73,7 +73,7 @@ public class Lab4 : VisualElement
     {
         foreach(VisualElement ve in m_List)
         {
-            ve.style.backgroundImage = new StyleBackground(Resources.Load<Sprite>(type));
+            ve.style.backgroundImage = new StyleBackground(Resources.Load<Texture2D>(type));
         }
     }
 

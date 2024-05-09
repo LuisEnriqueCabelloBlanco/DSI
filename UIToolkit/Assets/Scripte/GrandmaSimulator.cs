@@ -32,9 +32,9 @@ public class GrandmaSimulator : MonoBehaviour
         grandmaPhoto = root.Q("Photo");
 
         teStats = root.Q<Lab4>("Te");
-        //teStats.changeImage("Images/te");
+        teStats.changeImage("Images/te");
         nietosStats = root.Q<Lab4>("Nietos");
-        //nietosStats.changeImage("Images/nieto");
+        nietosStats.changeImage("Images/nieto");
     }
 
 
