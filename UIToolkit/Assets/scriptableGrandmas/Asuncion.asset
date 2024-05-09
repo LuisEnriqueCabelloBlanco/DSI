@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Asuncion
   m_EditorClassIdentifier: 
   grandmaName: "Asunci\xF3n"
-  fotoPath: 
+  fotoPath: Images/asuncion
   te: 2
   edad: 4
   nietos: 5

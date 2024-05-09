@@ -20,7 +20,7 @@ MonoBehaviour:
   m_MissingCharacterUnicode: 0
   m_ClearDynamicDataOnBuild: 1
   m_DefaultSpriteAsset: {fileID: 0}
-  m_DefaultSpriteAssetPath: Sprite Assets/
+  m_DefaultSpriteAssetPath: 
   m_FallbackSpriteAssets: []
   m_MissingSpriteCharacterUnicode: 0
   m_DefaultStyleSheet: {fileID: 0}
